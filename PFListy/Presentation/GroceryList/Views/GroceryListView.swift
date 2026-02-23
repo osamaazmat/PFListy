@@ -84,6 +84,7 @@ struct GroceryListView: View {
                 .padding(.vertical, AppSpacing.md)
                 .background(AppColors.primaryGradient)
                 .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
+                .shadow(color: .black.opacity(0.12), radius: 4, x: 0, y: 2)
             }
             .buttonStyle(.plain)
 

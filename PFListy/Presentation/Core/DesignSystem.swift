@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 enum AppColors {
-    static let gradientStart = Color(red: 0.55, green: 0.35, blue: 0.95)
-    static let gradientEnd = Color(red: 0.35, green: 0.55, blue: 0.95)
+    static let gradientStart = Color(red: 0.45, green: 0.25, blue: 0.85)
+    static let gradientEnd = Color(red: 0.25, green: 0.45, blue: 0.85)
     static let primaryGradient = LinearGradient(
         colors: [gradientStart, gradientEnd],
         startPoint: .leading,

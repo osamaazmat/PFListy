@@ -56,8 +56,8 @@ struct AddItemDrawerView: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, AppSpacing.md)
-                    .background(isAddEnabled ? AnyShapeStyle(AppColors.primaryGradient) : AnyShapeStyle(Color.gray.opacity(0.3)))
-                    .foregroundStyle(.white)
+                    .background(isAddEnabled ? AnyShapeStyle(AppColors.primaryGradient) : AnyShapeStyle(Color(.tertiarySystemFill)))
+                    .foregroundStyle(isAddEnabled ? .white : Color(.secondaryLabel))
                     .clipShape(RoundedRectangle(cornerRadius: AppRadius.md))
                 }
                 .disabled(!isAddEnabled)
@@ -65,8 +65,9 @@ struct AddItemDrawerView: View {
             }
         }
         .padding(AppSpacing.md)
-        .background(Color(.secondarySystemBackground))
+        .background(Color(.secondarySystemGroupedBackground))
         .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
+        .shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 2)
     }
 }
 
