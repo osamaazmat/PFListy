@@ -14,7 +14,7 @@ struct PFListyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GroceryListCoordinator()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
