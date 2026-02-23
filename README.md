@@ -2,6 +2,10 @@
 
 A SwiftUI grocery list app for iOS. Add items by category, filter by category, and mark items as purchased.
 
+| Light Mode | Dark Mode |
+|:----------:|:---------:|
+| ![Light Mode](Screenshots/LightMode.png) | ![Dark Mode](Screenshots/DarkMode.png) |
+
 ## Running the App
 
 1. Open `PFListy.xcodeproj` in Xcode.
